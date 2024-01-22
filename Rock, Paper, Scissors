@@ -1,0 +1,30 @@
+import random
+CPUNumber = random.randint(1, 3)
+if CPUNumber == 1:
+  CPUObject = "Rock"
+if CPUNumber == 2:
+  CPUObject = "Paper"
+if CPUNumber == 3:
+  CPUObject = "Scissors"
+WhichObject = input("What Object Do You Use?")
+if WhichObject == "Rock":
+  if CPUObject == "Rock":
+    print("Draw!")
+  if CPUObject == "Paper":
+    print("You Lose!")
+  if CPUObject == "Scissors":
+    print("You Win!")
+if WhichObject == "Scissors":
+  if CPUObject == "Scissors":
+    print("Draw!")
+  if CPUObject == "Rock":
+    print("You Lose!")
+  if CPUObject == "Paper":
+    print("You Lose!")
+if WhichObject == "Paper":
+  if CPUObject == "Paper":
+    print("Draw!")
+  if CPUObject == "Scissors":
+    print("You Lose!")
+  if CPUObject == "Rock":
+    print("You Win!")
